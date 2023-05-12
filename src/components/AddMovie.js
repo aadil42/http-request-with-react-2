@@ -13,11 +13,11 @@ function AddMovie(props) {
     // could add validation here...
 
     const movie = {
+      episode_id: Math.floor(Math.random() * 1000000),
       title: titleRef.current.value,
       openingText: openingTextRef.current.value,
       releaseDate: releaseDateRef.current.value,
     };
-
     props.onAddMovie(movie);
   }
 
